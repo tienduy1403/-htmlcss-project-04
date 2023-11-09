@@ -634,6 +634,7 @@ a {
 }
 
 .news-item__heading {
+    color: #10375c;
     font-family: Sora;
     font-weight: 600;
     line-height: 1.62;
