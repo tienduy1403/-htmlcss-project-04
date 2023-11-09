@@ -64,6 +64,14 @@ a {
     line-height: 1.67;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
+
 /* ===========Header + Navigation=========== */
 .header {
     position: sticky;
@@ -616,6 +624,7 @@ a {
     border-radius: 12px;
     border: 1px solid #e8ebee;
     background: #fff;
+    transition: 0.25s;
 }
 
 .news-item:hover {
@@ -648,6 +657,7 @@ a {
 }
 
 .news-item__desc {
+    --line-clamp: 3;
     margin-top: 10px;
     color: #575f66;
     font-size: 1.4rem;
@@ -663,6 +673,7 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: normal;
+    transition: 0.25s;
 }
 
 /* =========== Appointment =========== */
