@@ -175,7 +175,7 @@ a {
 
 /* =========== Hero =========== */
 .hero {
-    padding-top: 71px;
+    display: flex;
     background: #10375c;
     height: calc(100vh - 79px);
 }
@@ -186,7 +186,7 @@ a {
 
 /* Hero Content */
 .hero__content {
-    margin: auto 0;
+    margin: auto;
     flex-shrink: 0;
     width: 44.2%;
 }
@@ -470,6 +470,11 @@ a {
     width: 23.1%;
 }
 
+.member-item:hover .member-item__avatar {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .member-item__bg {
     display: flex;
     align-items: flex-end;
@@ -483,6 +488,7 @@ a {
 .member-item__avatar {
     width: 100%;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .member-item__name {
@@ -515,6 +521,7 @@ a {
     border-radius: 36px;
     border: 1px solid #575f66;
     background: transparent;
+    transition: 0.25s;
 }
 
 .member__button:hover {
