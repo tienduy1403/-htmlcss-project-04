@@ -748,6 +748,7 @@ a {
 }
 
 .footer__img {
+    display: inline-block;
     line-height: 32px;
     text-align: center;
     width: 32px;
