@@ -809,6 +809,10 @@ a {
     background: transparent;
 }
 
+.footer__input::placeholder {
+    color: #a9b3bb;
+}
+
 .footer__button {
     min-width: 108px;
     height: 46px;
